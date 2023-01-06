@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adex legends</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <head>
+        <div class="navbar">
+            <img src="img/Legends (1) 1.png" height="84px" alt="">
+            <ul>
+                
+                <li><a href="index.html" > HOME</a></li>
+                <li ><a href="legends.html">LEGENDS</a></li>
+                <li style="border-bottom: 2px solid #fff;"><a href="map.html">MAPS</a></li>
+                <li><a href="about.html">ABOUT US</a></li>
+            </ul>
+            <a href="register.html"><button id="register">REGISTER HERE</button></a>
+        </div>
+        <img src="img/Group 25.png" alt="" width="100%" height="240">
+    </head>
+    <div class="arena">
+        <h1>Arena</h1>
+        <p>ARENA maps are designed for some modes in the game</p>
+    </div>
+    <div class="map" style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)">Bind</span> 
+        <span class="dot" onclick="currentSlide(2)">Split</span> 
+        <span class="dot" onclick="currentSlide(3)">Heaven</span> 
+    </div>
+    <div class="slideshow-container">
+
+        <div class="mySlides fade">
+          <img src="img/Bind.png" style="width:100%">
+        </div>
+        <div class="mySlides fade">
+          <img src="img/Split.png" style="width:100%">
+        </div>
+        <div class="mySlides fade">
+          <img src="img/Heaven.png" style="width:100%">
+        </div>
+    </div>
+    <div class="arena">
+        <h1>Battle Royale</h1>
+        <p>Fields maps are designed ONLY  for battle royale mode in the game</p>
+    </div>
+    <div class="map1" style="text-align:center">
+        <span class="dot1" onclick="currentSlide1(1)">Olympus</span> 
+        <span class="dot1" onclick="currentSlide1(2)">Storm Point</span> 
+        <span class="dot1" onclick="currentSlide1(3)">King Canyon</span> 
+    </div>
+    <div class="slideshow-container1">
+
+        <div class="mySlides1 fade1">
+          <img src="img/Olympus.png" style="width:100%">
+        </div>
+        <div class="mySlides1 fade1">
+          <img src="img/Strom Point.png" style="width:100%;">
+        </div>
+        <div class="mySlides1 fade1">
+          <img src="img/Kings canyon.png" style="width:100%;">
+        </div>
+    </div>
+    
+    <footer>
+        <div class="top">
+            <div class="download">
+                <img src="img/Legends (2) 1.png" style="margin-top:50px;"alt="">
+            </div>
+            <p>CONNECT WITH US</p>
+        </div>
+        <div class="mid">
+            <img src="img/Legends (4) 1.png"  alt="">
+            <img src="img/Legends (1) 1.png" width="316" height="172" alt="">
+            <img src="img/Legends (7) 1.png" alt="">
+            <img src="img/Group 23.png" width="242" height="153" style="margin-top:30px ;" alt="">
+        </div>
+        <div class="bot">
+            <p>Copyright © 2022 Bluejack, Corp. - All Rights Reserved.</p>
+        </div>
+    </footer>
+    <script>
+        let slideIndex = 1;
+        showSlides(slideIndex);
+        
+        function plusSlides(n) {
+          showSlides(slideIndex += n);
+        }
+        
+        function currentSlide(n) {
+            
+          showSlides(slideIndex = n);
+        }
+       
+        function showSlides(n) {
+          let i;
+          let slides = document.getElementsByClassName("mySlides");
+          let dots = document.getElementsByClassName("dot");
+          if (n > slides.length) {slideIndex = 1}    
+          if (n < 1) {slideIndex = slides.length}
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+          }
+          for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";  
+          dots[slideIndex-1].className += " active";
+        }
+
+
+        let slideIndex1 = 1;
+        showSlides1(slideIndex1);
+         
+        function plusSlides(m) {
+          showSlides(slideIndex1 += m);
+        }
+        function currentSlide1(m) {
+            showSlides1(slideIndex1 = m);
+            let slides1 = document.getElementsByClassName("mySlides1");    
+            slides1[m].style.display = "active";
+        }
+
+        function showSlides1(m) {
+          let j;
+          let slides1 = document.getElementsByClassName("mySlides1");
+          let dots1 = document.getElementsByClassName("dot1");
+          if (m > slides1.length) {slideIndex1 = 1}    
+          if (m < 1) {slideIndex1 = slides1.length}
+          for (j = 0; j < slides1.length; j++) {
+            slides1[j].style.display = "none";  
+          }
+          for (j = 0; j < dots1.length; j++) {
+            dots1[j].className = dots1[j].className.replace(" active", "");
+          }
+          slides1[slideIndex1-1].style.display = "block";  
+          dots1[slideIndex1-1].className += " active";
+        }
+       
+    </script>
+    
+</body>
+</html>

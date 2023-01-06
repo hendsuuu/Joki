@@ -1,0 +1,381 @@
+@import url('https://fonts.googleapis.com/css2?family=Junge&family=League+Spartan:wght@600;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Junge', serif;
+}
+.navbar{
+    display: flex;
+    
+    background-color: black;
+    height: 84px;
+}
+.navbar li{
+    display: inline;
+    line-height:84px ;
+    align-items: center;
+    padding: 18px 24px;
+    font-size: 22px;
+}
+.navbar li a:hover{
+
+    color: #C2742B;
+    
+}
+#register{
+    margin-top: 20px;
+    right: 10px;
+    padding: 5px 5px;
+    color: #C2742B;
+    background-color: #00000000;
+    border-radius: 10px;
+    border: 5px solid #C2742B;
+    position:absolute;
+}
+#register:hover{
+    color: #fff;
+    border-color: #fff;
+   
+}
+.navbar a{
+    text-decoration: none;
+    color: #fff;
+    
+}
+.lastest{
+    background-image: url('img/Rectangle\ 13.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position-y:-50px ;
+    width: 100%;
+}
+.lastest h1{
+    font-size: 35px;
+}
+.lastest h1:hover{
+    color: #C2742B;
+}
+.isi{
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+}
+.iklan{
+    display: flex;
+}
+.iklan1 #pause{
+    opacity: 0.5;
+}
+.iklan1 #pause:hover{
+    opacity: 1.0;
+}
+footer{
+    background-color: black;
+    color: #fff;
+}
+footer .top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:0px 100px ;
+    border-bottom: 2px solid #fff;
+    width: 95%;
+    margin-left: 40px;
+}
+footer .top p{
+    font-size: 35px;
+    align-items: center;
+}
+footer .top .download img{
+    filter: opacity(1);
+}
+footer .top .download img:hover{
+    
+    filter: brightness(100%);
+    filter: contrast(100%);
+    filter: saturate(0);
+}
+footer .mid{
+    justify-content: space-evenly;
+    display: flex;
+    padding: 20px;
+}
+footer .bot{
+    text-align: center;
+    background-color: #282727;
+    height: 50px;
+    line-height: 50px;
+}
+#pause{
+    margin: 200px 250px;
+    position: absolute;
+}
+#pause:hover{
+    opacity: 100%;
+}
+.container{
+    display: grid;
+    grid-template-columns: auto auto ;
+    padding: 50px;
+    background-image: url('img/background\ 4.png');
+    height: 1530px;
+    width: 100%;
+}
+.character{
+    display: flex;
+    place-content: center;
+}
+.character .detail{
+    display: grid;
+    padding: 20px;
+    
+}
+.detail img{
+    filter: brightness(0);
+    
+}
+.detail img:hover{
+    filter: brightness(100%);
+}
+.detail h2{
+    font-family: 'League Spartan';
+    font-size: 35px;
+}
+.detail h2:hover{
+    color: #D72D2D;
+    cursor: pointer;
+}
+.detail p
+{
+    font-family: 'League Spartan';
+    font-size: 30px;
+}
+.character-detail{
+    display: flex;
+    justify-content: space-around;
+    padding: 100px 150px;
+    background-image: url('img/background\ 4.png');
+}
+.char-detail{
+    padding: 100px ;
+    font-size: 20px;
+}
+.arena{
+    background-color: black;
+    height: 100px;
+    width: 100%;
+    text-align: center;
+    color: #fff;
+}
+.arena h1{
+    font-size: 50px;
+
+}
+.arena p{
+    font-size: 20px;
+}
+.map{
+    background-color: black;
+    
+    display: flex;
+    color: #fff;
+    height: 100px;
+    font-size: 30px;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.map .dot{
+    cursor: pointer;
+}
+.map .dot:hover{
+    color: #C2742B;
+    border-bottom: 2px solid #fff;
+}
+.slideshow-container {
+    position: relative;
+    margin: auto;
+    
+}
+.slideshow-container1 {
+    position: relative;
+    margin: auto;
+    height: 563px;
+    display: block;
+}
+.map1{
+    background-color: black;
+    
+    display: flex;
+    color: #fff;
+    height: 100px;
+    font-size: 30px;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.map1 .dot1{
+    cursor: pointer;
+}
+.map1 .dot1:hover{
+    color: #C2742B;
+    border-bottom: 2px solid #fff;
+}
+.top-about{
+    display: flex;
+    column-gap: 100px;
+    justify-content: space-between;
+}
+
+.container-about{
+    background-image: url('img/background\ 7.png');
+    padding: 50px;
+}
+.cont-about{
+    display: grid;
+    grid-template-columns: auto auto;
+    padding: 50px;
+    column-gap: 250px;
+    row-gap: 50px;
+    
+}
+.cont-about h1{
+    font-size: 30px;
+    padding-bottom: 20px;
+    text-decoration: underline 5px #000;
+}
+.cont-about p{
+    line-height: 148%;
+    font-size: 24px;
+}
+.about-button{
+    margin-top: 20px;
+}
+.team{
+    display: flex;
+}
+.team h2{
+    font-size: 20px;
+}
+.team img{
+   
+  filter: grayscale(100%);
+}
+.regist{
+    background-image: url('img/background\ 7.png');
+    display: grid;
+    grid-template-columns: auto;
+    place-content: center;
+    padding-bottom:200px ;
+}
+.regist .logo{
+    display: flex;
+    place-content: center;
+}
+.form{
+    display: flex;
+    border-radius: 15px;
+    place-content: center;
+    text-align: center;
+    padding: 50px;
+    color: #2c2727;
+    width: 873px;
+    height: 972px;
+    background-color: #FDFAEA;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.245);
+}
+.form .title h1{
+    font-size: 36px;
+
+}
+.form .title h2{
+    font-size: 20px;
+}
+.sponsor{
+    display: flex;
+    column-gap: 20px;
+    place-content: center;
+}
+.form-input{
+    display: grid;
+    grid-template-columns: auto;
+    place-content: center;
+    row-gap: 30px;
+    padding: 50px;
+}
+.form-input input[type=text],input[type=submit],input[type=email],input[type=password]{
+    width: 324px;
+    height: 48px;
+    margin-left: 50px;
+    background-color: #DCE1E4;
+    border-radius: 12px;
+    text-align: center;
+    font-size: 20px;
+    place-items: center;
+}
+#submit{
+    width: 129px;
+    margin-left: 140px;
+    height: 47px;
+    cursor: pointer;
+
+  
+}
+.cont-cek{
+    display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 5px;
+  cursor: pointer;
+  user-select: none;
+}
+.cont-cek input {
+    position: absolute;
+    opacity: 0;
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+  }
+.mark {
+    position: absolute;
+    top: 0px;
+    left: 10px;
+    border: 2px solid #000;
+    border-radius: 5px;
+    width: 16px;
+    height: 16px;
+    background-color: rgba(0, 0, 0, 0);
+  }
+.cont-cek input:checked ~ .mark{
+    background-color: rgba(0, 0, 0, 0);
+    
+}
+.cont-cek input:checked ~ .mark:after{
+    display: block;
+}
+.cont-cek input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+.mark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+.cont-cek .mark:after {
+    right:  3.5px;
+    top: 2px;
+    width: 2px;
+    height: 4px;
+    border: solid rgb(0, 0, 0);
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+  }
+  ::placeholder {
+    color: #000;
+    text-align: center;
+    font-size: 20px;
+    opacity: 0.5; /* Firefox */
+  }

@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adex legends</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <head>
+        <div class="navbar">
+            <img src="img/Legends (1) 1.png" height="84px" alt="">
+            <ul>
+                
+                <li><a href="index.html" > HOME</a></li>
+                <li ><a href="legends.html">LEGENDS</a></li>
+                <li><a href="map.html">MAPS</a></li>
+                <li><a href="about.html">ABOUT US</a></li>
+            </ul>
+            <
+        </div>
+        <img src="img/Group 31.png" alt="" width="100%" height="240">
+    </head>
+    <div class="regist">
+        <div class="logo">
+            <img src="img/2 1.png" alt="">
+        </div>
+        <div class="form">
+            <div class="title">
+                <h1>Create Your AL Account</h1>
+                <br><br>
+                <h2>Sign Up fast here to  make an account </h2>
+                <br><br>
+                <div class="sponsor">
+                    <img src="img/Group 1.png" width="40" height="40" alt="">
+                    <img src="img/Group 2.png" width="40" height="40" alt="">
+                    <img src="img/Group 6.png" width="40" height="40" alt="">
+                    <img src="img/Group 4 (1).png" alt="">
+                    <img src="img/Group 4.png" width="40" height="40" alt="">
+                </div>
+                <br><br>
+                <div class="line">
+                    <img src="img/Group 32.png" alt="">
+                </div>
+                <form name="regist" class="form-input" action="" onsubmit="return(validateEmail());">
+                    <input type="text" name="nama" placeholder="FULL NAME">
+                    <input type="text" name="user" placeholder="USER ID">
+                    <input type="password" name="pass" placeholder="PASSWORD">
+                    <input type="password" name="confirm" placeholder="CONFIRMATION">
+                    <input type="text" name="email" placeholder="EMAIL">
+                    <div class="check">
+                        <label class="cont-cek" >
+                            
+                            <input class="cek" type="checkbox" >
+                            <span class="mark"></span><p> Agree to receive emails containing event information</p>
+                        </label>
+                        <Label class="cont-cek">
+                            
+                            <input class="cek" type="checkbox"> 
+                            <span class="mark"></span>I have agreed to the Terms of service and Privacy Policy
+                            
+                        </Label>
+                        
+                    </div>
+                    
+                    <input id="submit" type="submit" onclick="validateForm()" value="REGISTER">
+                </form>
+            </div>
+            
+
+        </div>
+    </div>
+    
+    <footer>
+        <div class="top">
+            <div class="download">
+                <img src="img/Legends (2) 1.png" style="margin-top:50px;"alt="">
+            </div>
+            <p>CONNECT WITH US</p>
+        </div>
+        <div class="mid">
+            <img src="img/Legends (4) 1.png"  alt="">
+            <img src="img/Legends (1) 1.png" width="316" height="172" alt="">
+            <img src="img/Legends (7) 1.png" alt="">
+            <img src="img/Group 23.png" width="242" height="153" style="margin-top:30px ;" alt="">
+        </div>
+        <div class="bot">
+            <p>Copyright © 2022 Bluejack, Corp. - All Rights Reserved.</p>
+        </div>
+    </footer>
+    <script>
+        function validateEmail() {
+            var emailID = document.regist.email.value;
+            atpos = emailID.indexOf("@");
+            dotpos = emailID.lastIndexOf(".");
+            
+            if (atpos < 1 || ( dotpos - atpos < 2 )) {
+                alert("Masukkan email yang benar")
+                document.regist.email.focus() ;
+                return false;
+            }
+         return( true );
+      }
+        function validateForm() {
+            if (document.forms["regist"]["nama"].value == "") {
+                alert("Nama Tidak Boleh Kosong");
+                document.forms["regist"]["nama"].focus();
+                return false;
+            }
+            if (document.forms["regist"]["user"].value == "") {
+                alert("Username Harus Diisi");
+                document.forms["regist"]["user"].focus();
+                return false;
+            }
+             
+             if (document.forms["regist"]["pass"].value == "") {
+                alert("Pilih Jurusan.");
+                document.forms["regist"]["pass"].focus();
+                return false;
+            }
+            if (document.forms["regist"]["confirm"].value != "pass") {
+                alert("silahkan Konfirmasi Password yang benar");
+                document.forms["regist"]["confirm"].focus();
+                return false;
+            }
+             
+            if (document.forms["regist"]["email"].value == "") {
+                alert("Email Tidak Boleh Kosong");
+                document.forms["regist"]["email"].focus();
+                return false;
+            }
+             
+        }
+
+    </script>
+    
+    
+</body>
+</html>
